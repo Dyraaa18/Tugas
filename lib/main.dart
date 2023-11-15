@@ -44,7 +44,6 @@ class HomePage extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            // Handle back button press
           },
         ),
         title: Text('Godrej'),
@@ -52,13 +51,11 @@ class HomePage extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.search),
             onPressed: () {
-              // Handle search button press
             },
           ),
           IconButton(
             icon: Icon(Icons.shopping_cart),
             onPressed: () {
-              // Handle shop button press
             },
           ),
         ],
@@ -73,10 +70,8 @@ class HomePage extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 50,
-                  // Ikon Godrej atau gambar profil Godrej
                   backgroundColor: Colors.grey,
                   backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyiaAMqWhxA_6_aJ3KvnUuSOia_vjh6GBZiw&usqp=CAU'),
-                   // Ganti dengan warna yang sesuai atau gunakan gambar
                 ),
                 SizedBox(height: 16),
                 Text(
@@ -96,7 +91,6 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 8),
                 ElevatedButton(
                   onPressed: () {
-                    // Handle Mengikuti button press
                   },
                   child: Text('Mengikuti'),
                 ),
@@ -145,7 +139,7 @@ class HomePage extends StatelessWidget {
       style: TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 18,
-        color: Colors.black, // Ganti dengan warna teks yang diinginkan
+        color: Colors.black,
       ),
       children: [
         TextSpan(text: 'Promosi'),
@@ -167,9 +161,8 @@ class HomePage extends StatelessWidget {
                 crossAxisSpacing: 8.0,
                 mainAxisSpacing: 8.0,
               ),
-              itemCount: 4, // Number of products
+              itemCount: 6, 
               itemBuilder: (context, index) {
-                // Your product boxes go here
                 return Container(
                   color: Colors.grey[200],
                   child: Center(
